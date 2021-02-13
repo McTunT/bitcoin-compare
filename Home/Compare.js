@@ -35,8 +35,6 @@ function Compare() {
   const Binance = BI();
   const Bitkub = BITK();
 
-  console.log("Bitkub:", bitk.THB_BTC.last);
-
   return (
     <div>
       <h1>Binance: {Binance}</h1>
