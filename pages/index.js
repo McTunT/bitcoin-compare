@@ -1,3 +1,11 @@
-export default function Home() {
-  return <h1>with-service-worker</h1>
+import Compare from "../Home/Compare";
+
+function Index() {
+  return (
+    <div>
+      <Compare />
+    </div>
+  );
 }
+
+export default Index;
