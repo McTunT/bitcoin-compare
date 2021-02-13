@@ -16,7 +16,9 @@ function Compare() {
     refreshInterval: 100,
   });
 
-  if (!bitk) return <div>loading...</div>;
+  const { data: exchange } = useSWR("/api/exchangerates", fetcher);
+
+  if (!bitk && !bi) return <div>loading...</div>;
 
   const BITK = () => {
     if (typeof bitk !== "undefined") {
@@ -26,9 +28,10 @@ function Compare() {
   };
 
   const BI = () => {
-    if (typeof bi !== "undefined") {
+    if (typeof ( bi && exchange ) !== "undefined") {
       const bitcoin = bi[11].lastPrice;
-      return IntlFormatNumber(bitcoin);
+      const ex = exchange.rates.THB;
+      return IntlFormatNumber(bitcoin * ex);
     }
   };
 
