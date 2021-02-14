@@ -77,11 +77,7 @@ function Compare() {
   return (
     <div className="flex flex-wrap items-center justify-around max-w-screen-lg mt-24 sm:w-full ">
       <div className="p-6 mt-6 text-left border w-80 rounded-xl focus:text-blue-600 text-center ">
-        <img
-          src="/bitkub-logo.jpg"
-          alt="Vercel Logo"
-          className="max-w-md mx-auto h-20"
-        />
+        <img src="/Bitkub.png" alt="bitkub" className="max-w-md mx-auto h-20" />
         <div className="text-xl">{Bitkub}</div>
         <div
           className=""
@@ -95,7 +91,7 @@ function Compare() {
       <div className="p-6 mt-6 text-left border w-80 rounded-xl focus:text-blue-600 text-center">
         <img
           src="/binance-logo.png"
-          alt="Vercel Logo"
+          alt="binance"
           className="max-w-md mx-auto h-20"
         />
         <div className="text-xl">{Binance}</div>
@@ -112,7 +108,7 @@ function Compare() {
       <div className="p-6 mt-6 text-left border w-80 rounded-xl focus:text-blue-600 text-center">
         <img
           src="/satang-pro.png"
-          alt="Vercel Logo"
+          alt="satang-pro"
           className="max-w-md mx-auto h-10 my-5"
         />
         <div className="text-xl">{Satang} </div>
