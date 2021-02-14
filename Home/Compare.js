@@ -75,16 +75,56 @@ function Compare() {
   const SatangChange = SaChange();
 
   return (
-    <div>
-      <h1>
-        Binance: {Binance} Change 24hr: {BinanceChange}%
-      </h1>
-      <h1>
-        Bitkub: {Bitkub} Change 24hr: {BitKubChange}%
-      </h1>
-      <h1>
-        Satang: {Satang} Change 24hr: {SatangChange}%
-      </h1>
+    <div className="flex flex-wrap items-center justify-around max-w-screen-lg mt-24 sm:w-full ">
+      <div className="p-6 mt-6 text-left border w-80 rounded-xl focus:text-blue-600 text-center ">
+        <img
+          src="/bitkub-logo.jpg"
+          alt="Vercel Logo"
+          className="max-w-md mx-auto h-20"
+        />
+        <div className="text-xl">{Bitkub}</div>
+        <div
+          className=""
+          style={{
+            color: BitKubChange > 0 ? "#019716" : "#e60000",
+          }}
+        >
+          {BitKubChange}%
+        </div>
+      </div>
+      <div className="p-6 mt-6 text-left border w-80 rounded-xl focus:text-blue-600 text-center">
+        <img
+          src="/binance-logo.png"
+          alt="Vercel Logo"
+          className="max-w-md mx-auto h-20"
+        />
+        <div className="text-xl">{Binance}</div>
+        <div
+          className=""
+          style={{
+            color: BinanceChange > 0 ? "#019716" : "#e60000",
+          }}
+        >
+          {BinanceChange}%
+        </div>
+      </div>
+
+      <div className="p-6 mt-6 text-left border w-80 rounded-xl focus:text-blue-600 text-center">
+        <img
+          src="/satang-pro.png"
+          alt="Vercel Logo"
+          className="max-w-md mx-auto h-10 my-5"
+        />
+        <div className="text-xl">{Satang} </div>
+        <div
+          className=""
+          style={{
+            color: SatangChange > 0 ? "#019716" : "#e60000",
+          }}
+        >
+          {SatangChange}%
+        </div>
+      </div>
     </div>
   );
 }
