@@ -1,5 +1,7 @@
 import Head from "next/head";
-import Compare from "../Home/Compare";
+import dynamic from "next/dynamic";
+
+const Compare = dynamic(() => import("../Home/Compare"));
 
 function Index() {
   return (
