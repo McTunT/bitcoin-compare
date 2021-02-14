@@ -6,7 +6,7 @@ const cors = Cors({
   methods: ["GET"],
 });
 
-const url = "https://api.bitkub.com/api/market/ticker?sym=THB_BTC";
+const url = "https://api.tdax.com/api/v3/ticker/24hr?symbol=btc_thb";
 
 export default async (req, res) => {
   const response = await fetch(url, {
@@ -15,6 +15,6 @@ export default async (req, res) => {
   });
 
   await initMiddleware(req, res, cors);
-  const bitkub = await response.json();
-  return res.status(200).json(bitkub);
+  const satang = await response.json();
+  return res.status(200).json(satang);
 };

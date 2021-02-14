@@ -15,6 +15,6 @@ export default async (req, res) => {
   });
 
   await initMiddleware(req, res, cors);
-  const gold = await response.json();
-  return res.status(200).json(gold);
+  const exchange = await response.json();
+  return res.status(200).json(exchange);
 };
