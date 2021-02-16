@@ -8,8 +8,6 @@ const cors = Cors({
 
 const url = "https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT";
 
-// http://27.254.77.78/rest/public/rest/goldspot
-
 export default async (req, res) => {
   const response = await fetch(url, {
     body: null,

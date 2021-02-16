@@ -18,6 +18,16 @@ function Index() {
         </nav>
       </Head>
       <Compare />
+      <footer className="flex items-center justify-center w-full h-24 border-t mt-10 hover:text-red-500">
+        <a
+          className="flex items-center justify-center"
+          href="https://github.com/McTunT/bitcoin-compare"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by {"James"}
+        </a>
+      </footer>
     </div>
   );
 }

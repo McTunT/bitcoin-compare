@@ -75,7 +75,7 @@ function Compare() {
   const SatangChange = SaChange();
 
   return (
-    <div className="flex flex-wrap items-center justify-around max-w-screen-lg mt-24 sm:w-full ">
+    <div className="flex flex-wrap items-center justify-around max-w-screen-lg mt-24 sm:w-full">
       <div className="p-6 mt-6 text-left border w-80 rounded-xl focus:text-blue-600 text-center ">
         <img src="/Bitkub.png" alt="bitkub" className="max-w-md mx-auto h-20" />
         <div className="text-xl">{Bitkub}</div>
