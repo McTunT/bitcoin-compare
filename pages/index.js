@@ -5,7 +5,7 @@ const Compare = dynamic(() => import("../Home/Compare"));
 
 function Index() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-screen justify-between">
       <Head>
         <title>Bitcoin Compare</title>
         <link rel="icon" href="/Bitcoin_logo.png" />
@@ -18,7 +18,7 @@ function Index() {
         </nav>
       </Head>
       <Compare />
-      <footer className="flex items-center justify-center w-full h-24 border-t mt-10 hover:text-red-500">
+      <footer className="flex items-center justify-center w-full h-24 relative bottom-0 top-auto  border-t mt-10 hover:text-red-500">
         <a
           className="flex items-center justify-center"
           href="https://github.com/McTunT/bitcoin-compare"
